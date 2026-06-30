@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certifications — Noah Bulbring</title>
+  <meta name="description" content="Certifications earned by Noah Bulbring in finance, AI, and consulting." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-header {
+      padding: 8rem 2rem 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--text); }
+    .certs-page { padding: 3rem 2rem 6rem; }
+    .cert-cards { display: flex; flex-direction: column; gap: 1px; border: 1px solid var(--border); }
+    .cert-card {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 0;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.2s;
+    }
+    .cert-card:last-child { border-bottom: none; }
+    .cert-card:hover { background: #060606; }
+    .cert-info {
+      padding: 2.5rem;
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .cert-card-issuer {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .cert-card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+    }
+    .cert-card-date {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+    .cert-tasks {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .cert-tasks span {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      line-height: 1.5;
+    }
+    .cert-tasks span::before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+      margin-top: 0.45rem;
+    }
+    .cert-image-wrap {
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #050505;
+    }
+    .cert-image-wrap img {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      display: block;
+    }
+    @media (max-width: 700px) {
+      .cert-card { grid-template-columns: 1fr; }
+      .cert-info { border-right: none; border-bottom: 1px solid var(--border); }
+      .page-header { padding: 6rem 1.25rem 2rem; }
+      .certs-page { padding: 2rem 1.25rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar" class="scrolled">
+    <a href="index.html" class="nav-logo">NB</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#certifications">Certs</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <a href="index.html#certifications" class="back-link">← Back to portfolio</a>
+      <p class="section-label">Certifications</p>
+      <h2 style="margin-bottom:0">All Credentials</h2>
+    </div>
+  </div>
+
+  <div class="certs-page">
+    <div class="container">
+      <div class="cert-cards">
+
+        <!-- IBM -->
+        <div class="cert-card">
+          <div class="cert-info">
+            <div class="cert-card-issuer">IBM SkillsBuild</div>
+            <div class="cert-card-title">Artificial Intelligence Fundamentals</div>
+            <div class="cert-card-date">Issued Jun 29, 2026 &nbsp;·&nbsp; ID: 38f5951b-ed8e-4973-8bb6-5a364cbaf530</div>
+            <div class="cert-tasks">
+              <span>Machine learning, deep learning &amp; neural networks</span>
+              <span>Natural language processing &amp; computer vision</span>
+              <span>Generative AI &amp; AI ethics</span>
+            </div>
+          </div>
+          <div class="cert-image-wrap">
+            <img src="certs/ibm-ai-fundamentals.png" alt="IBM AI Fundamentals Certificate" />
+          </div>
+        </div>
+
+        <!-- Google -->
+        <div class="cert-card">
+          <div class="cert-info">
+            <div class="cert-card-issuer">Google Cloud</div>
+            <div class="cert-card-title">Introduction to Responsible AI</div>
+            <div class="cert-card-date">Issued Jun 28, 2026</div>
+            <div class="cert-tasks">
+              <span>Responsible AI practices &amp; Google’s AI principles</span>
+              <span>Transparency, fairness, accountability &amp; privacy</span>
+            </div>
+          </div>
+          <div class="cert-image-wrap">
+            <img src="certs/google-responsible-ai.png" alt="Google Responsible AI Certificate" />
+          </div>
+        </div>
+
+        <!-- OpenAI Applied AI -->
+        <div class="cert-card">
+          <div class="cert-info">
+            <div class="cert-card-issuer">OpenAI Academy</div>
+            <div class="cert-card-title">Applied AI Foundations</div>
+            <div class="cert-card-date">Issued Jun 30, 2026 &nbsp;·&nbsp; ID: n8fxvczngy</div>
+            <div class="cert-tasks">
+              <span>Practical understanding of how AI works</span>
+              <span>Prompting, context-setting &amp; output review</span>
+              <span>Applying AI to real workflow improvements</span>
+            </div>
+          </div>
+          <div class="cert-image-wrap">
+            <img src="certs/openai-applied-ai.png" alt="OpenAI Applied AI Foundations Certificate" />
+          </div>
+        </div>
+
+        <!-- OpenAI Agents -->
+        <div class="cert-card">
+          <div class="cert-info">
+            <div class="cert-card-issuer">OpenAI Academy</div>
+            <div class="cert-card-title">Agents and Workflows</div>
+            <div class="cert-card-date">Issued Jun 30, 2026 &nbsp;·&nbsp; ID: e5gxi9s2wa</div>
+            <div class="cert-tasks">
+              <span>Providing context &amp; defining agent outputs</span>
+              <span>Setting boundaries &amp; reviewing results</span>
+              <span>Improving AI workflows over time</span>
+            </div>
+          </div>
+          <div class="cert-image-wrap">
+            <img src="certs/openai-agents-workflows.png" alt="OpenAI Agents and Workflows Certificate" />
+          </div>
+        </div>
+
+        <!-- JPMorgan -->
+        <div class="cert-card">
+          <div class="cert-info">
+            <div class="cert-card-issuer">J.P. Morgan &nbsp;·&nbsp; Forage</div>
+            <div class="cert-card-title">Investment Banking Job Simulation</div>
+            <div class="cert-card-date">Issued Jun 29, 2026</div>
+            <div class="cert-tasks">
+              <span>Find M&amp;A targets &amp; target information and auction process</span>
+              <span>Financial analysis &amp; DCF modelling</span>
+              <span>Provide an investment recommendation</span>
+            </div>
+          </div>
+          <div class="cert-image-wrap">
+            <img src="certs/jpmorgan-ib.png" alt="J.P. Morgan Investment Banking Certificate" />
+          </div>
+        </div>
+
+        <!-- BofA IB -->
+        <div class="cert-card">
+          <div class="cert-info">
+            <div class="cert-card-issuer">Bank of America &nbsp;·&nbsp; Forage</div>
+            <div class="cert-card-title">Investment Banking Job Simulation</div>
+            <div class="cert-card-date">Issued Jun 29, 2026</div>
+            <div class="cert-tasks">
+              <span>Historical financial performance &amp; SWOT analysis</span>
+              <span>Strategic alternatives &amp; financial modelling</span>
+              <span>Communicating successfully &amp; building long-term relationships</span>
+            </div>
+          </div>
+          <div class="cert-image-wrap">
+            <img src="certs/bofa-ib.png" alt="Bank of America Investment Banking Certificate" />
+          </div>
+        </div>
+
+        <!-- BofA Private Bank -->
+        <div class="cert-card">
+          <div class="cert-info">
+            <div class="cert-card-issuer">Bank of America &nbsp;·&nbsp; Forage</div>
+            <div class="cert-card-title">The Private Bank Job Simulation</div>
+            <div class="cert-card-date">Issued Jun 29, 2026</div>
+            <div class="cert-tasks">
+              <span>Client account servicing &amp; communication</span>
+              <span>Uncovering client goals &amp; priorities</span>
+              <span>Matching goals to Private Bank strategies</span>
+            </div>
+          </div>
+          <div class="cert-image-wrap">
+            <img src="certs/bofa-private-bank.png" alt="Bank of America Private Bank Certificate" />
+          </div>
+        </div>
+
+        <!-- PwC Management Consulting -->
+        <div class="cert-card">
+          <div class="cert-info">
+            <div class="cert-card-issuer">PwC &nbsp;·&nbsp; Forage</div>
+            <div class="cert-card-title">Management Consulting Simulation</div>
+            <div class="cert-card-date">Issued Jun 30, 2026</div>
+            <div class="cert-tasks">
+              <span>Create a business summary &amp; divestiture interview guide</span>
+              <span>Qualitative synergy presentation</span>
+              <span>Simple Excel model &amp; email summary</span>
+            </div>
+          </div>
+          <div class="cert-image-wrap">
+            <img src="certs/pwc-consulting.png" alt="PwC Management Consulting Certificate" />
+          </div>
+        </div>
+
+        <!-- PwC Audit -->
+        <div class="cert-card">
+          <div class="cert-info">
+            <div class="cert-card-issuer">PwC &nbsp;·&nbsp; Forage</div>
+            <div class="cert-card-title">Audit Simulation</div>
+            <div class="cert-card-date">Issued Jun 29, 2026</div>
+            <div class="cert-tasks">
+              <span>Detailed questions &amp; internal correspondence</span>
+              <span>Purchasing process &amp; control testing workpaper</span>
+              <span>Purchasing process walkthrough &amp; risk control matrix</span>
+            </div>
+          </div>
+          <div class="cert-image-wrap">
+            <img src="certs/pwc-audit.png" alt="PwC Audit Simulation Certificate" />
+          </div>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="cert-card">
+          <div class="cert-info">
+            <div class="cert-card-issuer">LinkedIn Learning</div>
+            <div class="cert-card-title">Corporate Finance Foundations</div>
+            <div class="cert-card-date">Issued Jun 30, 2026 &nbsp;·&nbsp; 1 hr 25 min</div>
+            <div class="cert-tasks">
+              <span>Risk, diversification &amp; capital structure</span>
+              <span>Stocks, bonds &amp; raising capital</span>
+              <span>Time value of money &amp; investment evaluation</span>
+            </div>
+          </div>
+          <div class="cert-image-wrap">
+            <img src="certs/linkedin-corporate-finance.png" alt="LinkedIn Corporate Finance Foundations Certificate" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Noah Bulbring &nbsp;·&nbsp; noahbulbring.com</p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
