@@ -148,28 +148,48 @@ h1 {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0;
 }
 .cert-list li {
-  font-size: 0.95rem;
-  color: #aaa;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   border-bottom: 1px solid var(--border);
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  transition: color 0.2s;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-left: 1.25rem;
+  position: relative;
 }
 .cert-list li:last-child { border-bottom: none; }
 .cert-list li::before {
   content: '';
+  position: absolute;
+  left: 0;
+  top: 1.9rem;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: var(--accent);
-  flex-shrink: 0;
 }
-.cert-list li:hover { color: var(--text); }
+.cert-main {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.cert-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.cert-issuer {
+  font-size: 0.78rem;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+.cert-desc {
+  font-size: 0.83rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
 
 #projects { border-top: 1px solid var(--border); }
 .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1px; border: 1px solid var(--border); }
