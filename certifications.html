@@ -31,8 +31,7 @@
     .cert-cards { display: flex; flex-direction: column; gap: 1px; border: 1px solid var(--border); }
     .cert-card {
       display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 0;
+      grid-template-columns: 340px 1fr;
       border-bottom: 1px solid var(--border);
       transition: background 0.2s;
     }
@@ -54,7 +53,7 @@
       color: var(--accent);
     }
     .cert-card-title {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       font-weight: 600;
       letter-spacing: -0.02em;
       line-height: 1.3;
@@ -85,23 +84,24 @@
       border-radius: 50%;
       background: var(--accent);
       flex-shrink: 0;
-      margin-top: 0.45rem;
+      margin-top: 0.5rem;
     }
     .cert-image-wrap {
-      padding: 2rem;
+      padding: 2.5rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #050505;
+      background: #040404;
     }
     .cert-image-wrap img {
       width: 100%;
-      max-width: 480px;
-      border-radius: 4px;
-      border: 1px solid var(--border);
+      max-width: 700px;
+      border-radius: 6px;
+      border: 1px solid #222;
       display: block;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.5);
     }
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       .cert-card { grid-template-columns: 1fr; }
       .cert-info { border-right: none; border-bottom: 1px solid var(--border); }
       .page-header { padding: 6rem 1.25rem 2rem; }
@@ -134,7 +134,6 @@
     <div class="container">
       <div class="cert-cards">
 
-        <!-- IBM -->
         <div class="cert-card">
           <div class="cert-info">
             <div class="cert-card-issuer">IBM SkillsBuild</div>
@@ -147,11 +146,10 @@
             </div>
           </div>
           <div class="cert-image-wrap">
-            <img src="certs/ibm-ai-fundamentals.png" alt="IBM AI Fundamentals Certificate" />
+            <img src="image-1782856107630.png" alt="IBM AI Fundamentals Certificate" />
           </div>
         </div>
 
-        <!-- Google -->
         <div class="cert-card">
           <div class="cert-info">
             <div class="cert-card-issuer">Google Cloud</div>
@@ -163,45 +161,10 @@
             </div>
           </div>
           <div class="cert-image-wrap">
-            <img src="certs/google-responsible-ai.png" alt="Google Responsible AI Certificate" />
+            <img src="image-1782856117085.png" alt="Google Responsible AI Certificate" />
           </div>
         </div>
 
-        <!-- OpenAI Applied AI -->
-        <div class="cert-card">
-          <div class="cert-info">
-            <div class="cert-card-issuer">OpenAI Academy</div>
-            <div class="cert-card-title">Applied AI Foundations</div>
-            <div class="cert-card-date">Issued Jun 30, 2026 &nbsp;·&nbsp; ID: n8fxvczngy</div>
-            <div class="cert-tasks">
-              <span>Practical understanding of how AI works</span>
-              <span>Prompting, context-setting &amp; output review</span>
-              <span>Applying AI to real workflow improvements</span>
-            </div>
-          </div>
-          <div class="cert-image-wrap">
-            <img src="certs/openai-applied-ai.png" alt="OpenAI Applied AI Foundations Certificate" />
-          </div>
-        </div>
-
-        <!-- OpenAI Agents -->
-        <div class="cert-card">
-          <div class="cert-info">
-            <div class="cert-card-issuer">OpenAI Academy</div>
-            <div class="cert-card-title">Agents and Workflows</div>
-            <div class="cert-card-date">Issued Jun 30, 2026 &nbsp;·&nbsp; ID: e5gxi9s2wa</div>
-            <div class="cert-tasks">
-              <span>Providing context &amp; defining agent outputs</span>
-              <span>Setting boundaries &amp; reviewing results</span>
-              <span>Improving AI workflows over time</span>
-            </div>
-          </div>
-          <div class="cert-image-wrap">
-            <img src="certs/openai-agents-workflows.png" alt="OpenAI Agents and Workflows Certificate" />
-          </div>
-        </div>
-
-        <!-- JPMorgan -->
         <div class="cert-card">
           <div class="cert-info">
             <div class="cert-card-issuer">J.P. Morgan &nbsp;·&nbsp; Forage</div>
@@ -214,11 +177,10 @@
             </div>
           </div>
           <div class="cert-image-wrap">
-            <img src="certs/jpmorgan-ib.png" alt="J.P. Morgan Investment Banking Certificate" />
+            <img src="image-1782856120895.png" alt="J.P. Morgan Investment Banking Certificate" />
           </div>
         </div>
 
-        <!-- BofA IB -->
         <div class="cert-card">
           <div class="cert-info">
             <div class="cert-card-issuer">Bank of America &nbsp;·&nbsp; Forage</div>
@@ -231,45 +193,10 @@
             </div>
           </div>
           <div class="cert-image-wrap">
-            <img src="certs/bofa-ib.png" alt="Bank of America Investment Banking Certificate" />
+            <img src="image-1782856124737.png" alt="Bank of America Investment Banking Certificate" />
           </div>
         </div>
 
-        <!-- BofA Private Bank -->
-        <div class="cert-card">
-          <div class="cert-info">
-            <div class="cert-card-issuer">Bank of America &nbsp;·&nbsp; Forage</div>
-            <div class="cert-card-title">The Private Bank Job Simulation</div>
-            <div class="cert-card-date">Issued Jun 29, 2026</div>
-            <div class="cert-tasks">
-              <span>Client account servicing &amp; communication</span>
-              <span>Uncovering client goals &amp; priorities</span>
-              <span>Matching goals to Private Bank strategies</span>
-            </div>
-          </div>
-          <div class="cert-image-wrap">
-            <img src="certs/bofa-private-bank.png" alt="Bank of America Private Bank Certificate" />
-          </div>
-        </div>
-
-        <!-- PwC Management Consulting -->
-        <div class="cert-card">
-          <div class="cert-info">
-            <div class="cert-card-issuer">PwC &nbsp;·&nbsp; Forage</div>
-            <div class="cert-card-title">Management Consulting Simulation</div>
-            <div class="cert-card-date">Issued Jun 30, 2026</div>
-            <div class="cert-tasks">
-              <span>Create a business summary &amp; divestiture interview guide</span>
-              <span>Qualitative synergy presentation</span>
-              <span>Simple Excel model &amp; email summary</span>
-            </div>
-          </div>
-          <div class="cert-image-wrap">
-            <img src="certs/pwc-consulting.png" alt="PwC Management Consulting Certificate" />
-          </div>
-        </div>
-
-        <!-- PwC Audit -->
         <div class="cert-card">
           <div class="cert-info">
             <div class="cert-card-issuer">PwC &nbsp;·&nbsp; Forage</div>
@@ -282,11 +209,74 @@
             </div>
           </div>
           <div class="cert-image-wrap">
-            <img src="certs/pwc-audit.png" alt="PwC Audit Simulation Certificate" />
+            <img src="image-1782856128287.png" alt="PwC Audit Simulation Certificate" />
           </div>
         </div>
 
-        <!-- LinkedIn -->
+        <div class="cert-card">
+          <div class="cert-info">
+            <div class="cert-card-issuer">Bank of America &nbsp;·&nbsp; Forage</div>
+            <div class="cert-card-title">The Private Bank Job Simulation</div>
+            <div class="cert-card-date">Issued Jun 29, 2026</div>
+            <div class="cert-tasks">
+              <span>Client account servicing &amp; communication</span>
+              <span>Uncovering client goals &amp; priorities</span>
+              <span>Matching goals to Private Bank strategies</span>
+            </div>
+          </div>
+          <div class="cert-image-wrap">
+            <img src="image-1782856136213.png" alt="Bank of America Private Bank Certificate" />
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-info">
+            <div class="cert-card-issuer">PwC &nbsp;·&nbsp; Forage</div>
+            <div class="cert-card-title">Management Consulting Simulation</div>
+            <div class="cert-card-date">Issued Jun 30, 2026</div>
+            <div class="cert-tasks">
+              <span>Create a business summary &amp; divestiture interview guide</span>
+              <span>Qualitative synergy presentation</span>
+              <span>Simple Excel model &amp; email summary</span>
+            </div>
+          </div>
+          <div class="cert-image-wrap">
+            <img src="image-1782856139629.png" alt="PwC Management Consulting Certificate" />
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-info">
+            <div class="cert-card-issuer">OpenAI Academy</div>
+            <div class="cert-card-title">Applied AI Foundations</div>
+            <div class="cert-card-date">Issued Jun 30, 2026 &nbsp;·&nbsp; ID: n8fxvczngy</div>
+            <div class="cert-tasks">
+              <span>Practical understanding of how AI works</span>
+              <span>Prompting, context-setting &amp; output review</span>
+              <span>Applying AI to real workflow improvements</span>
+            </div>
+          </div>
+          <div class="cert-image-wrap">
+            <img src="image-1782856143013.webp" alt="OpenAI Applied AI Foundations Certificate" />
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-info">
+            <div class="cert-card-issuer">OpenAI Academy</div>
+            <div class="cert-card-title">Agents and Workflows</div>
+            <div class="cert-card-date">Issued Jun 30, 2026 &nbsp;·&nbsp; ID: e5gxi9s2wa</div>
+            <div class="cert-tasks">
+              <span>Providing context &amp; defining agent outputs</span>
+              <span>Setting boundaries &amp; reviewing results</span>
+              <span>Improving AI workflows over time</span>
+            </div>
+          </div>
+          <div class="cert-image-wrap">
+            <img src="image-1782856146020.webp" alt="OpenAI Agents and Workflows Certificate" />
+          </div>
+        </div>
+
         <div class="cert-card">
           <div class="cert-info">
             <div class="cert-card-issuer">LinkedIn Learning</div>
@@ -299,7 +289,7 @@
             </div>
           </div>
           <div class="cert-image-wrap">
-            <img src="certs/linkedin-corporate-finance.png" alt="LinkedIn Corporate Finance Foundations Certificate" />
+            <img src="image-1782856148868.png" alt="LinkedIn Corporate Finance Foundations Certificate" />
           </div>
         </div>
 
